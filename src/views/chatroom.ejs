@@ -8,6 +8,13 @@
   </head>
   <body>
     <div class="container clearfix">
+      <div class="controls">
+        <a href="/rooms" class="rooms-btn">Rooms</a>
+        <a href="/logout" class="logout-btn">Logout</a>
+      </div>
+      <div class="users-list">
+        <ul class="list"></ul>
+      </div>
       <div class="chat">
         <div class="chat-header clearfix">
           <img src="<%= user.picture %>" alt="avatar">
@@ -15,7 +22,6 @@
             <div class="chat-room"><%= room.title %></div>
             <div class="chat-num-users"> User(s)</div>
           </div>
-          <i class="fa fa-users"></i>
         </div> <!-- end chat-header -->
 
         <div class="chat-history">
@@ -29,19 +35,10 @@
         </div> <!-- end chat-message -->
       </div> <!-- end chat -->
 
-      <div class="controls">
-          <a href="/logout" class="logout-btn">Logout</a>
-          <a href="/rooms" class="rooms-btn">Rooms</a>
-      </div>
-
-      <div class="users-list">
-        <ul class="list">
-        </ul>
-      </div>
     </div> <!-- end container -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/main.js"></script>
     <script>$(function(){app.chat('<%= room.id %>', '<%= user.username %>')});</script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+{
+	"db": {
+		"username": "accountAdmin",
+		"password": "password",
+		"host": "localhost",
+		"port": "27017",
+		"name": "sync-chat"
+	},
+	"sessionSecret": "<RandomString>",
+	"redis": {
+		"host": "127.0.0.1",
+		"port": 6379,
+		"password": ""
+	}
+}

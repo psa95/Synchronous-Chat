@@ -24,7 +24,6 @@
 let express = require("express");
 let bodyParser = require("body-parser");
 let path = require("path");
-let pg = require("pg");
 let flash = require('connect-flash');
 
 const app = express();
@@ -52,7 +51,7 @@ app.use('/', routes);
 
 // Middleware to catch 404 errors
 app.use(function(req, res, next) {
-  res.status(404).sendFile(process.cwd() + '/app/views/404.htm');
+  res.status(404).sendFile(process.cwd() + '/app/views/404.html');
 });
 
 io.listen(PORT, () => {

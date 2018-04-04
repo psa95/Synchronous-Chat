@@ -8,14 +8,17 @@
   <body>
     <div class="login-page">
       <div class="form">
+        <div class="imgcontainer">
+          <img src="img/scape.png" alt="Avatar" class="avatar">
+        </div>
 
 
-        <div class="form-line"></div>
-
-        <div style="margin-top: 18px;">
+        <div style="margin-top: 30px;">
             <form action="/register" class="register-form" method="post" >
-              <input type="text" name="username" placeholder="username"/>
-              <input type="password" name="password" placeholder="password"/>
+              <label for="uname" class="label-edit">Username</label>
+              <input type="text" name="username" placeholder="New Username"/>
+              <label for="pwd" class="label-edit">Password</label>
+              <input type="password" name="password" placeholder="New Password"/>
               <button type="submit">create</button>
               <p class="message">Already registered? <a href="#">Sign In</a></p>
               <% if (errors != null && showRegisterForm != null && showRegisterForm === true) { %>
@@ -25,8 +28,10 @@
               <% } %>
             </form>
             <form action="/login" class="login-form" method="post">
-              <input type="text" name="username" placeholder="username"/>
-              <input type="password" name="password" placeholder="password"/>
+              <label for="uname" class="label-edit">Username</label>
+              <input type="text" name="username" placeholder="Enter Username"/>
+              <label for="pwd" class="label-edit">Password</label>
+              <input type="password" name="password" placeholder="Enter Password"/>
               <button type="submit">login</button>
               <p class="message">Not registered? <a href="#">Create an account</a></p>
               <% if (errors != null && showRegisterForm == null) { %>

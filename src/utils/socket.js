@@ -131,7 +131,7 @@ var init = function(app){
 
 	// Allow sockets to access session data
 	io.use((socket, next) => {
-		require('../session')(socket.request, {}, next);
+		require('./session')(socket.request, {}, next);
 	});
 
 	// Define all Events
