@@ -347,7 +347,6 @@ a.logout-btn:hover, a.logout-btn:active, a.logout-btn:focus {
 .chat, .users-list{
   padding-bottom: 500em;
   margin-bottom: -500em;
-  margin-top: -7.49em;
 }
 .not-found-error {
   padding: 5%;
