@@ -286,9 +286,7 @@ ul {
   margin-top: 2px;
   border-bottom: 2px solid white;
 }
-.social-buttons div span {
-  font-weight: bold;
-}
+
 .chat-message button, .room-create button, .controls a {
   font-family: "Ubuntu", sans-serif;
   float: right;
