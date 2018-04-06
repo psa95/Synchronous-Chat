@@ -4,14 +4,7 @@ var init = function () {
 		var redisURI 		= require('url').parse(process.env.REDIS_URL);
 		var redisPassword 	= redisURI.auth.split(':')[1];
 		return {
-			db: {
-				username: "accountAdmin",
-				password: "password",
-				host: "localhost",
-				port: "27017",
-				name: "sync-chat"
-			},
-			sessionSecret: "PBAAF20NACW1W40POOG",
+			sessionSecret: process.env.SESSION_SEC,
 			redis: {
 				host: redisURI.hostname,
 				port: redisURI.port,

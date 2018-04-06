@@ -39,7 +39,7 @@ body {
 }
 .users-list ul {
   padding: 20px;
-  max-height: 770px;
+  max-height: 500px;
 }
 .users-list ul li {
   padding-bottom: 20px;
@@ -110,8 +110,8 @@ body {
   position: relative;
 }
 .chat .chat-history .message:after {
-  bottom: 98%;
-  left: 10%;
+  bottom: 94%;
+  left: 22px;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -125,7 +125,9 @@ body {
 .chat .chat-history .my-message {
   background: #B5D2CB;
   border-radius: 25px;
-  width: 250px;
+  max-width: 600px;
+  display: inline-block;
+  word-wrap: break-word;
 }
 .chat .chat-message, .room .room-create {
   padding: 20px;
@@ -268,7 +270,7 @@ ul {
   color: white;
 }
 .users-list ul {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .loginBtn {
   width: 80%;
