@@ -1,25 +1,3 @@
-// const http = require('http');
-// const fs = require('fs');
-//
-// const hostname = '127.0.0.1';
-// const port = 3000;
-//
-// fs.readFile('src/index.html', (err, html) => {
-//   if(err){
-//     throw err;
-//   }
-//
-//   const server = http.createServer((req, res) => {
-//     res.statusCode = 200;
-//     res.setHeader('Content-type', 'text/html');
-//     res.write(html);
-//     res.end();
-//   });
-//
-//   server.listen(port, hostname, () => {
-//     console.log('Server started on port ' + port);
-//   });
-// });
 
 let express = require("express");
 let bodyParser = require("body-parser");
@@ -51,7 +29,7 @@ app.use('/', routes);
 
 // Middleware to catch 404 errors
 app.use(function(req, res, next) {
-  res.status(404).sendFile(process.cwd() + '/app/views/404.html');
+  res.status(404).sendFile(process.cwd() + '/src/views/404.html');
 });
 
 io.listen(PORT, () => {

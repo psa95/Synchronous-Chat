@@ -11,6 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.login-container {
+  margin-top: 20px;
+}
+
 .container {
   margin: 2% auto;
   width: 1000px;
@@ -19,7 +23,7 @@ body {
 
 .users-list {
   width: 270px;
-  float: center;
+  float: initial;
 }
 .users-list .search {
   padding: 20px;
@@ -182,7 +186,7 @@ body {
 /*  Login Page */
 .login-page {
   width: 400px;
-  padding: 8% 0 0;
+  padding: 3% 0 0;
   margin: auto;
 }
 .form {
@@ -192,7 +196,7 @@ body {
   max-width: 400px;
   margin: 0 auto 100px;
   padding: 45px;
-  text-align: align-left;
+  text-align: left;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
@@ -200,7 +204,7 @@ body {
   outline: 0;
   background: #f2f2f2;
   width: 100%;
-  border: 10;
+  border: double;
   margin: 10px 0 15px;
   padding: 15px;
   box-sizing: border-box;
@@ -216,8 +220,8 @@ body {
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
@@ -299,8 +303,8 @@ ul {
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 button:hover, button:active, button:focus {

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html >
   <head>
-    <meta charset="UTF-8">
-    <title>Sync-Chat</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <% include ./partial/head %>
   </head>
   <body>
     <div class="login-page">
@@ -13,7 +11,7 @@
         </div>
 
 
-        <div style="margin-top: 30px;">
+        <div class="login-container">
             <form action="/register" class="register-form" method="post" >
               <label for="uname" class="label-edit">Username</label>
               <input type="text" name="username" placeholder="New Username"/>
